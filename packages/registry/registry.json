@@ -1,0 +1,40 @@
+{
+  "schema": "https://dataface.dev/schema/registry.json",
+  "version": "0.1.0",
+  "components": [
+    {
+      "name": "button",
+      "display": "Button",
+      "category": "inputs",
+      "description": "A button component that supports different variants and sizes.",
+      "dependencies": ["@radix-ui/react-slot"],
+      "registryDependencies": ["utils"],
+      "type": "component",
+      "files": ["index.tsx", "types.ts"],
+      "version": "1.0.0"
+    },
+    {
+      "name": "utils",
+      "display": "Utilities",
+      "category": "utilities",
+      "description": "A collection of utility functions used by components.",
+      "dependencies": ["clsx", "tailwind-merge", "class-variance-authority"],
+      "registryDependencies": [],
+      "type": "utility", 
+      "files": ["index.ts", "cn.ts"],
+      "version": "1.0.0"
+    }
+  ],
+  "categories": [
+    {
+      "name": "inputs",
+      "display": "Inputs",
+      "description": "Components for collecting user input."
+    },
+    {
+      "name": "utilities",
+      "display": "Utilities",
+      "description": "Utility functions and helpers."
+    }
+  ]
+} 

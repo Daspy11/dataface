@@ -1,0 +1,65 @@
+You are creating Dataface, a component library which will have identical DX to ShadCN ui with components added to the 
+repo from a registry, but with carefully designed beautiful components to look and feel like Linear/Attio/Notion.
+
+## Coding standards
+- Use patterns and technologies from ShadCN ui where possible
+- Design elements carefully to look like Linear/Attio/Notion
+
+## Target Project Structure
+dataface/
+├── .github/                           # GitHub configuration
+│   ├── workflows/                     # CI/CD workflows
+│   │   ├── ci.yml                     # Build and test on PRs
+│   │   └── release.yml                # Publish packages
+│   ├── ISSUE_TEMPLATE/                # Issue templates
+│   └── PULL_REQUEST_TEMPLATE.md       # PR template
+├── apps/                              # Applications
+│   └── docs/                          # Documentation website
+│       ├── content/                   # MDX content
+│       │   ├── docs/                  # Documentation pages
+│       │   │   ├── components/        # Component docs
+│       │   │   │   └── button.mdx     # Button component docs
+│       │   │   ├── getting-started/   # Getting started guides
+│       │   │   └── index.mdx          # Home page
+│       │   └── blog/                  # Blog posts
+│       ├── public/                    # Static assets
+│       ├── src/                       # Website source code
+│       │   ├── components/            # Website components
+│       │   ├── pages/                 # Website pages
+│       │   └── styles/                # Website styles
+│       ├── next.config.js             # Next.js configuration
+│       └── package.json               # Website dependencies
+├── packages/                          # Packages
+│   ├── cli/                           # CLI tool (published to npm)
+│   │   ├── src/                       # CLI source code
+│   │   │   ├── commands/              # CLI commands
+│   │   │   │   ├── init.ts            # Initialize project
+│   │   │   │   └── add.ts             # Add component
+│   │   │   ├── utils/                 # Utility functions
+│   │   │   │   ├── get-components.ts  # Get components
+│   │   │   │   ├── get-config.ts      # Get configuration
+│   │   │   │   └── transform.ts       # Transform component
+│   │   │   └── index.ts               # CLI entry point
+│   │   ├── templates/                 # Templates
+│   │   │   └── components.json        # Default components.json
+│   │   ├── package.json               # CLI dependencies
+│   │   └── tsconfig.json              # TypeScript configuration
+│   ├── config/                        # Shared configuration
+│   │   ├── eslint/                    # ESLint configuration
+│   │   ├── prettier/                  # Prettier configuration
+│   │   └── typescript/                # TypeScript configuration
+│   └── registry/                      # Component registry
+│       ├── src/                       # Component source code
+│       │   ├── button/                # Button component
+│       │   │   ├── index.tsx          # Component implementation
+│       │   │   └── types.ts           # Component types
+│       │   └── index.ts               # Registry exports
+│       ├── package.json               # Registry dependencies
+│       └── tsconfig.json              # TypeScript configuration
+├── .gitignore                         # Git ignore file
+├── CONTRIBUTING.md                    # Contributing guidelines
+├── LICENSE                            # License
+├── README.md                          # README
+├── package.json                       # Root package.json
+├── pnpm-workspace.yaml                # pnpm workspace configuration
+└── turbo.json                         # Turborepo configuration

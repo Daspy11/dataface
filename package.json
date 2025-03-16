@@ -1,0 +1,22 @@
+{
+  "name": "dataface",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A component library with identical DX to ShadCN UI but with beautiful components inspired by Linear/Attio/Notion",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0"
+  },
+  "packageManager": "pnpm@8.6.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

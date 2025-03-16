@@ -1,0 +1,26 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "A collection of utility functions used by components",
+  "dependencies": ["clsx", "tailwind-merge", "class-variance-authority"],
+  "registryDependencies": [],
+  "styles": ["default"],
+  "examples": [
+    {
+      "name": "cn",
+      "code": "./examples/cn.ts"
+    }
+  ],
+  "type": "utility",
+  "author": {
+    "name": "Dataface Team",
+    "url": "https://github.com/dataface"
+  },
+  "maintainers": [
+    {
+      "name": "John Doe",
+      "github": "johndoe"
+    }
+  ],
+  "status": "stable"
+} 

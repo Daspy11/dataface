@@ -1,0 +1,32 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "A button component that supports different variants and sizes",
+  "dependencies": ["@radix-ui/react-slot"],
+  "registryDependencies": ["utils"],
+  "styles": ["default", "minimal", "linear"],
+  "examples": [
+    {
+      "name": "default",
+      "code": "./examples/default.tsx"
+    },
+    {
+      "name": "secondary",
+      "code": "./examples/secondary.tsx"
+    }
+  ],
+  "type": "component",
+  "propInterface": "ButtonProps",
+  "aria": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+  "author": {
+    "name": "Dataface Team",
+    "url": "https://github.com/dataface"
+  },
+  "maintainers": [
+    {
+      "name": "John Doe",
+      "github": "johndoe"
+    }
+  ],
+  "status": "stable"
+} 
